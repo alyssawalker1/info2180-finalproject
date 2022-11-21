@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Dolphin CRM</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+	<div class= "nav-bar">
+		<h3>Dolphin CRM</h3>	
+	</div>
+	<div class="container">
+		<div class="nav-panel">
+			<a href="">Home</a><br>
+			<a href="">New Contact</a><br>
+			<a href="">Users</a><br>
+			<hr><div class="exit"><a href="">Logout</a></div>
+		</div>
+
+		<div class="main">
+			<form method="post" name="form" action="userData.php">
+				<h1>New User</h1>
+
+				<label>Firstname</label><br>
+				<input type="text" id="first-name"/><br><br>
+
+				<label>Lastname</label><br>
+				<input type="text" id="last-name"/><br><br>
+
+                <label>Email</label><br>
+				<input type="text" id="first-name"/><br><br>
+
+				<label>Password</label><br>
+				<input type="password" id="password"/><br><br>
+
+                <label for="Role">Role</label>
+                <select name="Role" id="Role">
+                    <option value="Role">Member</option>
+                </select>
+                
+				<button id="submit">Submit</button>
+
+			</form>
+
+		</div>
+	</div>
+</body>
+</html>
