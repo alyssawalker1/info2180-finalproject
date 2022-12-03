@@ -37,6 +37,7 @@ h1{
   color: white;
   border-radius: 24px;
   transition: 0.25px;
+  
 }
 
   .box button{
@@ -45,25 +46,34 @@ h1{
     margin: 20px auto;
     text-align:center;
     border:20px;
-    padding:14px 10px;
+    padding:6px 10px;
     outline: none;
     color: #FFFFFF;
     border-radius: 3px;
+    width:180px;
     
     cursor: pointer;
   }
 
   header{
-    display: inline-block;
-    width: 100%;
+    text-align: justify;
     background-color:#2C5282;
-    padding-bottom: 10px;
+    padding-bottom: 4px;
+    padding-top: 2px;
   }
 
   img{
-    margin-top: 0.1px;
+    float: left;
+    margin-top: 17px;
+    padding-right: 2px;
   }
 
   #email{
     margin-bottom: 15px;
+  }
+
+  hr{
+    margin-top: 30px;
+    width: 435%;
+    margin-left: -170%;
   }
