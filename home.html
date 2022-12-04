@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Dolphin CRM</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Dolphin CRM Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="homestyle.css">
 </head>
 
 <body>
@@ -31,35 +31,22 @@
 		</div>
 
 		<div class="main">
-			<h1>New User</h1>
+            <div class="heading">
+                <h1>Dashboard</h1>
+                <button id="Add-Contact"><img class="plusicon" src="plusicon.png" width="12" height="12"/>Add Contact</button>
+            </div>
 			<form method="post" name="form" action="userData.php">
-				<div class="form">
-				<div class="form-groupA">
-					<label>First Name</label><br>
-					<input type="text" id="first-name"/><br>
-
-					<label>Email</label><br>
-					<input type="text" id="first-name"/><br>
-				</div>
-				<div class="form-groupB">
-
-					<label>Last Name</label><br>
-					<input type="text" id="last-name"/><br>
-					
-
-					<label>Password</label><br>
-					<input type="password" id="password"/><br>
-				</div>
-				</div>
-				<div class="form-groupC">
-					<label for="Role">Role</label><br>
-					<select name="Role" id="Role">
-						<option value="Role">Member</option>
-					</select><br>
-				<div class="form-groupD">
-					<button id="submit">Submit</button>
-				</div> 
-				</div>
+                        <div class="formhead">
+                            <h3>Filter By:</h3>
+                            <ul>
+                                <li><a href="">All</a></li><br>
+                                <li><a href="">Sales Leads</a></li><br>
+                                <li><a href="">Support</a></li><br>
+                                <li><a href="">Assigned to me</a></li><br>
+                            </ul>
+                        </div>
+                        
+                        <div class="Contact list"></div>
 			</form>
 
 		</div>
