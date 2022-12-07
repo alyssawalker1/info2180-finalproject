@@ -19,45 +19,46 @@
 				<a href="home.html">Home</a><br>
 
 				<img class="NewContacticon" src="new contact.png" width="28" height="20" />
-				<a href="">New Contact</a><br>
+				<a href="index.php">New Contact</a><br>
 
 				<img class="Usersicon" src="users.png" width="28" height="20" />
-				<a href="">Users</a><br>
+				<a href="dolphincrm.html">Users</a><br>
 				
 				<hr>
 				<img class="Logouticon" src="logout.png" width="28" height="20" />
-				<div class="exit"><a href="">Logout</a></div>
+				<div class="exit"><a href="logout.php">Logout</a></div>
 			</div>
 		</div>
 
 		<div class="main">
 			<h1>New User</h1>
-			<form method="post" name="form" action="userData.php">
+			<form method="post" name="form" action="user.php">
 				<div class="form">
 				<div class="form-groupA">
 					<label>First Name</label><br>
-					<input type="text" id="first-name"/><br>
+					<input type="text" id="first-name" name="firstname" placeholder="Mary"/><br>
 
 					<label>Email</label><br>
-					<input type="text" id="first-name"/><br>
+					<input type="text" id="email" name="email" placeholder="MarySmith@gmail.com"/><br>
 				</div>
 				<div class="form-groupB">
 
 					<label>Last Name</label><br>
-					<input type="text" id="last-name"/><br>
+					<input type="text" id="last-name" name="lastname" placeholder="Smith"/><br>
 					
 
 					<label>Password</label><br>
-					<input type="password" id="password"/><br>
+					<input type="password" id="password" name="password"/><br>
 				</div>
 				</div>
 				<div class="form-groupC">
 					<label for="Role">Role</label><br>
-					<select name="Role" id="Role">
-						<option value="Role">Member</option>
+					<select id="Role" name="role">
+						<option value="Admim"> Admin</option> 
+						<option value="Member">Member</option>
 					</select><br>
 				<div class="form-groupD">
-					<button id="submit">Submit</button>
+					<button id="submit" name="save">Save</button>
 				</div> 
 				</div>
 			</form>

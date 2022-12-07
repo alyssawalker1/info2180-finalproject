@@ -2,13 +2,14 @@ DROP DATABASE IF EXISTS dolphin_crm;
 CREATE DATABASE dolphin_crm;
 USE dolphin_crm;
 
+
 DROP TABLE IF EXISTS `Users`;
 CREATE table `Users`(
 	`id` int(11) NOT NULL auto_increment,
     `firstname` VARCHAR(15) NOT NULL default '',
 	`lastname` VARCHAR(15) NOT NULL default '',
-	`password` VARCHAR(30) NOT NULL default '',
 	`email` VARCHAR(100) NOT NULL default '',
+    `password` VARCHAR(30) NOT NULL default '',
     `role` VARCHAR(30),
     `created_at` DATETIME NOT NULL default current_timestamp,
     PRIMARY KEY (`id`)
@@ -16,7 +17,7 @@ CREATE table `Users`(
 )ENGINE=MyISAM AUTO_INCREMENT=4080 DEFAULT CHARSET=utf8mb4;
 
 
-INSERT INTO `Users` VALUES (1,"fake","name","$2y$10$StDdnrk9VnKYVXk8/08uwuHeDdM8CRK8LLkANZ9U0Kz/r7FB4iUa2","admin@project2.com","employee",current_timestamp);
+INSERT INTO `Users` VALUES (1,"fake","name","admin@project2.com","password123","ADMIN",current_timestamp);
 
 DROP TABLE IF EXISTS `Contacts`;
 CREATE table `Contacts`(

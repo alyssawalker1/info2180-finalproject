@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Dolphin CRM Dashboard</title>
 	<link rel="stylesheet" type="text/css" href="homestyle.css">
+    <script src="newcontact.js"></script>
 </head>
 
 <body>
@@ -19,21 +20,21 @@
 				<a href="home.html">Home</a><br>
 
 				<img class="NewContacticon" src="new contact.png" width="28" height="20" />
-				<a href="">New Contact</a><br>
+				<a href="index.php">New Contact</a><br>
 
 				<img class="Usersicon" src="users.png" width="28" height="20" />
-				<a href="">Users</a><br>
+				<a href="dolphincrm.html">Users</a><br>
 				
 				<hr>
 				<img class="Logouticon" src="logout.png" width="28" height="20" />
-				<div class="exit"><a href="">Logout</a></div>
+				<div class="exit"><a href="logout.php" name="logout">Logout</a></div>
 			</div>
 		</div>
 
 		<div class="main">
             <div class="heading">
                 <h1>Dashboard</h1>
-                <button id="Add-Contact"><img class="plusicon" src="plusicon.png" width="12" height="12"/>Add Contact</button>
+                <button  class="btn" id="Add-Contact"><img class="plusicon" src="plusicon.png" width="12" height="12"/>Add Contact</button>
             </div>
 			<form method="post" name="form" action="userData.php">
                         <div class="formhead">
